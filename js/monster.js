@@ -88,17 +88,3 @@ function popMonster()
     }
     console.log(pop)
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
