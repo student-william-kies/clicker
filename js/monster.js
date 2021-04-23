@@ -1,6 +1,6 @@
-
-/* ----- All monsters ----- */
-
+/**
+ * Var All Monsters
+ */
 var allMonsters =
     [
         [
@@ -8,12 +8,15 @@ var allMonsters =
             '<img class="img-fluid monster1" id="monster" src="resources/gifs/commun/harpie.gif">',
             '<img class="img-fluid monster1" id="monster" src="resources/gifs/commun/slime.gif">',
             '<img class="img-fluid monster1" id="monster" src="resources/gifs/commun/birdblack.gif">',
-            '<img class="img-fluid monster1" id="monster" src="resources/gifs/commun/birdgreen.gif">'
+            '<img class="img-fluid monster1" id="monster" src="resources/gifs/commun/bird.gif">',
+            '<img class="img-fluid monster1" id="monster" src="resources/gifs/commun/covid.gif">',
+
         ],
         [
             '<img class="img-fluid monster2" id="monster" src="resources/gifs/normal/groscaca.gif">',
             '<img class="img-fluid monster2" id="monster" src="resources/gifs/normal/grosse.gif">',
-            '<img class="img-fluid monster2" id="monster" src="resources/gifs/normal/wolf.gif">'
+            '<img class="img-fluid monster2" id="monster" src="resources/gifs/normal/wolf.gif">',
+            '<img class="img-fluid monster2" id="monster" src="resources/gifs/normal/zombie.gif">'
         ],
         [
             '<img class="img-fluid monster3" id="monster" src="resources/gifs/rare/demon.gif">',
@@ -23,49 +26,46 @@ var allMonsters =
         [
             '<img class="img-fluid monster4" id="monster" src="resources/gifs/elite/leo.gif">',
             '<img class="img-fluid monster4" id="monster" src="resources/gifs/elite/marteau.gif">',
-            '<img class="img-fluid monster4" id="monster" src="resources/gifs/elite/rathian.gif">'
+            '<img id="rathian" class="img-fluid monster4" id="monster" src="resources/gifs/elite/rathian.gif">'
         ],
         [
             '<img class="img-fluid monster5" id="monster" src="resources/gifs/boss/kouizine.png">',
             '<img class="img-fluid monster5" id="monster" src="resources/gifs/boss/shiba.gif">',
+            '<img id="git" class="img-fluid monster5" id="monster" src="resources/gifs/boss/git.gif">'
         ]
     ]
 
-/* ----- Pop Monsters ----- */
+/**
+ * Fonction qui affiche certains monstres en fonction des clics (niveaux)
+ */
 
 var pop = 1;
 
-document.getElementById("popZone").innerHTML = allMonsters[0][Math.floor(Math.random()*5)]
+document.getElementById("popZone").innerHTML = allMonsters[0][Math.floor(Math.random()*6)]
 
 function popMonster()
 {
 
     if( pop < 5)
     {
-        document.getElementById("round").innerHTML ="<h2>Vague 1</h2>";
-
         if (pop === (x /5))
         {
             pop++;
-            document.getElementById("popZone").innerHTML = allMonsters[0][Math.floor(Math.random()*5)];
+            document.getElementById("popZone").innerHTML = allMonsters[0][Math.floor(Math.random()*6)];
         }
     }
 
     if(pop >= 5 && pop <10)
     {
-        document.getElementById("round").innerHTML ="<h2>Vague 2</h2>";
-
         if (pop === (x /10))
         {
             pop++;
-            document.getElementById("popZone").innerHTML = allMonsters[1][Math.floor(Math.random()*3)];
+            document.getElementById("popZone").innerHTML = allMonsters[1][Math.floor(Math.random()*4)];
         }
     }
 
     if(pop >= 10 && pop <15)
     {
-        document.getElementById("round").innerHTML ="<h2>Vague 3</h2>";
-
         if (pop === (x /15))
         {
             pop++;
@@ -75,8 +75,6 @@ function popMonster()
 
     if(pop >= 15 && pop <20)
     {
-        document.getElementById("round").innerHTML ="<h2>Vague 4</h2>";
-
         if (pop === (x /20))
         {
             pop++;
@@ -86,15 +84,21 @@ function popMonster()
 
     if (pop >= 20 && pop <25)
     {
-        document.getElementById("round").innerHTML ="<h2>Vague Troll</h2>";
-
         if (pop === (x /25))
         {
             pop++;
-            document.getElementById("popZone").innerHTML = allMonsters[4][Math.floor(Math.random()*2)];
+            document.getElementById("popZone").innerHTML = allMonsters[4][Math.floor(Math.random()*3)];
         }
     }
 
+    if (pop >= 25)
+    {
+        if (pop === (x /25))
+        {
+            pop++;
+            document.getElementById("popZone").innerHTML = allMonsters[Math.floor(Math.random()*5)][Math.floor(Math.random()*3)];
+        }
+    }
     console.log(pop)
 }
 

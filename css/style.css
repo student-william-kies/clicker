@@ -14,10 +14,10 @@ body{
     background-image: url("../resources/images/landscape-bg.png");
     background-size: cover;
     background-position: 3%;
-    -moz-user-select: none; /* Firefox */
-    -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
-    -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
-    user-select: none; /* Propriété standard */
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 /*----- Main-Content -----*/
@@ -36,12 +36,10 @@ body{
 }
 
 #hero{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 5;
-
-    width: 30vh;
+    width: 40vh;
+    position: fixed;
+    bottom: 5%;
+    left: 35%;
 }
 
 .monster{
@@ -67,11 +65,23 @@ body{
 }
 
 .monster4{
-    width: 50vh;
+    margin-right: 10%;
+    margin-bottom: 32%;
+    width: 100vw;
 }
 
 .monster5{
-    width: 60vh;
+    margin-bottom: 32%;
+    width: 70vh;
+}
+
+#rathian{
+    margin-bottom: 70%;
+    margin-right: 10%;
+}
+
+#git{
+    margin-bottom: 5%;
 }
 
 /*--- Vagues ---*/
@@ -94,14 +104,26 @@ body{
 }
 
 .coin{
-    width: 3vw;
-    margin-left: -0.5vw;
+    width: 1vw;
     margin-top: -0.5vh;
+    margin-left: 0.5vw;
+}
+
+.button{
+    border: none;
+    background: none;
+}
+
+.price{
+    width: 1vw;
+    margin-top: -0.5vh;
+    margin-left: 0.5vw;
 }
 
 .store{
-    margin-left: -3vw;
-    width: 30vw;
+    position: fixed;
+    top: 2%;
+    margin-right: 20%;
 }
 
 #parchment{

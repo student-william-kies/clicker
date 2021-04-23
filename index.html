@@ -1,5 +1,5 @@
 <!doctype html>
-<html onclick="heroAnimation1(); mouseClicked()" lang="fr">
+<html onclick="mouseClicked()" lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body class="">
+    <body>
         <header>
             <section class="container-fluid header-content">
                 <div class="container gold">
@@ -28,38 +28,42 @@
                                     <p>Dear Knight,</p>
                                     <p>you will find something to protect us below.</p>
                                     <ul>
-                                        <li><button id="sword" class="btn sizingButton" onclick="upgradeSword()">img épée - Upgrade 100<img src="resources/gifs/coin.gif" class="coin" alt="coin"></button></li>
-                                        <li><button id="massue" class="btn sizingButton" onclick="buyAndUpmassue()">img Massue - Buy 5k<img src="resources/gifs/coin.gif" class="coin" alt="coin"></button></li>
+                                        <p>Items</p>
+                                        <li><img src="resources/images/sword.png" alt="sword" style="width: 10%">Epée - <button id="sword" class="button" onclick="manageSword()">Upgrade 100<img src="resources/gifs/coin.gif" class="price" alt="coin"></button></li>
+                                        <li><img src="resources/images/shield.png" alt="shield" style="width: 10%">Bouclier - <button id="shield" class="button" onclick="manageShield()">Upgrade 25k<img src="resources/gifs/coin.gif" class="price" alt="coin"></button></li>
+                                        <li><img src="resources/images/trollbonus.png" alt="trollBonus" style="width: 10%">Lunette bonus - <button id="trollBonus" class="button" onclick="manageLunette()">Upgrade 1M<img src="resources/gifs/coin.gif" class="price" alt="coin"></button></li>
+                                        <hr>
+                                        <p>Spells</p>
+                                        <li><img src="resources/images/hourglass.png" alt="hourglass" style="width: 10%">Sablier - <button id="hourglass" class="button" onclick="manageHourGlass()">Upgrade 20k<img src="resources/gifs/coin.gif" class="price" alt="coin"></button></li>
+                                        <li><img src="resources/images/arrow.png" alt="arrow" style="width: 10%">Jet de flèches - <button id="arrow" class="button" onclick="">Upgrade 45k<img src="resources/gifs/coin.gif" class="price" alt="coin"></button></li>
+                                        <li><img src="resources/images/catapult.png" alt="catapult" style="width: 10%">Catapulte - <button id="catapult" class="button" onclick="">Upgrade 50k<img src="resources/gifs/coin.gif" class="price" alt="coin"></button></li>
+                                        <hr>
+                                        <p>Compagnons</p>
+                                        <li><img src="resources/gifs/archer.gif" alt="archer" style="width: 10%">Archer - <button id="archer" class="button" onclick="">Upgrade 1M<img src="resources/gifs/coin.gif" class="price" alt="coin"></button></li>
+                                        <li><img src="resources/gifs/Thiefs.gif" alt="thiefs" style="width: 10%">Voleuse - <button id="thiefs" class="button" onclick="">Upgrade 1M<img src="resources/gifs/coin.gif" class="price" alt="coin"></button></li>
                                     </ul>
                                 </div>
                                 <div id="parchmentBottom">You are a Knight, please protect us !</div>
                             </div>
                         </div>
                     </div>
-
+                  
                     <div class="container main-arena" id="mainArena">
-                        <div id="round">
-
-                        </div>
-                        <div id="hero">
-                            <img class="img-fluid"  src="resources/gifs/hero.gif" alt="Notre héro principale">
+                        <div>
+                            <img class="img-fluid" id="hero" src="resources/gifs/hero.gif" alt="Notre héro principal">
                         </div>
                         <div class="monster">
-                            <div id="textZone">
-                            </div>
                             <div id="popZone" ></div>
                         </div>
                     </div>
                 </section>
             </article>
         </main>
-
-        <script src="js/jquery-3.6.0.min.js"></script>
+     
         <script src="js/bootstrap.bundle.js"></script>
         <script src="js/script.js"></script>
-        <script src="js/upgradeSword.js"></script>
-        <script src="js/massue.js"></script>
-        <script src="js/popMonster.js"></script>
-        <script src="js/heroAnimation.js"></script>
+        <script src="js/parchment.js"></script>
+        <script src="js/hero.js"></script>
+        <script src="js/monster.js"></script>
     </body>
 </html>
