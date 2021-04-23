@@ -36,10 +36,10 @@ body{
 }
 
 #hero{
-    width: 50vh;
+    width: 40vh;
     position: fixed;
     bottom: 5%;
-    left: 30%;
+    left: 35%;
 }
 
 .monster{
@@ -65,11 +65,23 @@ body{
 }
 
 .monster4{
-    width: 50vh;
+    margin-right: 10%;
+    margin-bottom: 32%;
+    width: 100vw;
 }
 
 .monster5{
-    width: 60vh;
+    margin-bottom: 32%;
+    width: 70vh;
+}
+
+#rathian{
+    margin-bottom: 70%;
+    margin-right: 10%;
+}
+
+#git{
+    margin-bottom: 5%;
 }
 
 /*--- Vagues ---*/
@@ -109,8 +121,9 @@ body{
 }
 
 .store{
-    margin-left: -3vw;
-    width: 30vw;
+    position: fixed;
+    top: 2%;
+    margin-right: 20%;
 }
 
 #parchment{
