@@ -1,16 +1,16 @@
-var nbGold = 0;
+let nbGold = 0;
 
 /**
  * Variables des items
  */
-var lvl = 1;
-var lvlShield = 0;
-var lvlLunette = 0;
+let lvl = 1;
+let lvlShield = 0;
+let lvlLunette = 0;
 
 /**
  * Variables des spells
  */
-var lvlHourGlass = 0;
+let lvlHourGlass = 0;
 
 /**
  * Variables des monstres
