@@ -21,6 +21,24 @@ function incrementSeconds()
     document.getElementById("nbGold").innerHTML = nbGold + '<img src="resources/gifs/coin.gif" class="coin" alt="coin">';
 }
 
+function secondForHourGlass()
+{
+    nbGold += 500;
+    document.getElementById("nbGold").innerHTML = nbGold + '<img src="resources/gifs/coin.gif" class="coin" alt="coin">';
+}
+
+function secondForHourGlass2()
+{
+    nbGold += 1000;
+    document.getElementById("nbGold").innerHTML = nbGold + '<img src="resources/gifs/coin.gif" class="coin" alt="coin">';
+}
+
+function secondForHourGlass3()
+{
+    nbGold += 10000;
+    document.getElementById("nbGold").innerHTML = nbGold + '<img src="resources/gifs/coin.gif" class="coin" alt="coin">';
+}
+
 /***********************************************************************************************************************
  * PARCHMENT - ITEMS (Achats et améliorations des items)
  **********************************************************************************************************************/
@@ -38,7 +56,7 @@ function manageSword()
                 lvl++;
                 nbGold -= 100;   document.getElementById('sword').innerHTML = 'Upgrade 250<img src="resources/gifs/coin.gif" class="coin" alt="coin">';
             }
-        break;
+            break;
 
         case 2:
             if (nbGold >= 250)
@@ -46,7 +64,7 @@ function manageSword()
                 lvl = 10;
                 nbGold -= 250;   document.getElementById('sword').innerHTML = 'Upgrade 1,25k<img src="resources/gifs/coin.gif" class="coin" alt="coin">';
             }
-        break;
+            break;
 
         case 10:
             if (nbGold >= 1250)
@@ -54,7 +72,7 @@ function manageSword()
                 lvl = 40;
                 nbGold -= 1250;   document.getElementById('sword').innerHTML = 'Upgrade 2,30k<img src="resources/gifs/coin.gif" class="coin" alt="coin">';
             }
-        break;
+            break;
 
         case 40:
             if (nbGold >= 2300)
@@ -62,7 +80,7 @@ function manageSword()
                 lvl = 80;
                 nbGold -= 2300;   document.getElementById('sword').innerHTML = 'Upgrade 6,85k<img src="resources/gifs/coin.gif" class="coin" alt="coin">';
             }
-        break;
+            break;
 
         case 80:
             if (nbGold >= 6850)
@@ -70,7 +88,7 @@ function manageSword()
                 lvl = 150;
                 nbGold -= 6850;   document.getElementById('sword').innerHTML = 'Upgrade 10k<img src="resources/gifs/coin.gif" class="coin" alt="coin">';
             }
-        break;
+            break;
 
         case 150:
             if (nbGold >= 10000)
@@ -79,7 +97,7 @@ function manageSword()
                 nbGold -= 10000;   document.getElementById('sword').innerHTML= 'Fully Upgraded';
                 document.getElementById('sword').disabled = 'true';
             }
-        break;
+            break;
     }
 }
 
@@ -96,7 +114,7 @@ function manageShield()
                 lvlShield = 500;
                 nbGold -= 25000;   document.getElementById('shield').innerHTML = 'Upgrade 50k<img src="resources/gifs/coin.gif" class="coin" alt="coin">';
             }
-        break;
+            break;
 
         case 500:
             if (nbGold >= 50000)
@@ -104,7 +122,7 @@ function manageShield()
                 lvlShield = 1200;
                 nbGold -= 50000;   document.getElementById('shield').innerHTML = 'Upgrade 100k<img src="resources/gifs/coin.gif" class="coin" alt="coin">';
             }
-        break;
+            break;
 
         case 1200:
             if (nbGold >= 100000)
@@ -113,7 +131,7 @@ function manageShield()
                 nbGold -= 100000;   document.getElementById('shield').innerHTML= 'Fully Upgraded';
                 document.getElementById('shield').disabled = 'true';
             }
-        break;
+            break;
     }
 }
 
@@ -131,7 +149,7 @@ function manageLunette()
                 nbGold -= 1000000;   document.getElementById('trollBonus').innerHTML= 'Fully Upgraded';
                 document.getElementById('trollBonus').disabled = 'true';
             }
-        break;
+            break;
     }
 }
 
@@ -147,16 +165,31 @@ function manageHourGlass()
             if (nbGold >= 10)
             {
                 lvlHourGlass++;
-                nbGold -= 10;   incrementSeconds();
+                nbGold -= 10;   document.getElementById('hourglass').innerHTML = 'Upgrade 50k<img src="resources/gifs/coin.gif" class="coin" alt="coin">';
+                secondForHourGlass()
+                setInterval(secondForHourGlass, 1000);
             }
-        break;
+            break;
 
-        case 10:
+        case 1:
             if (nbGold >= 20)
             {
-                lvlHourGlass = 50;
-                nbGold -= 20;   document.getElementById('hourglass').innerHTML= 'Fully Upgraded';
+                lvlHourGlass++;
+                nbGold -= 20;   document.getElementById('hourglass').innerHTML = 'Upgrade 100k<img src="resources/gifs/coin.gif" class="coin" alt="coin">';
+                secondForHourGlass2()
+                setInterval(secondForHourGlass2, 1000);
             }
-        break;
+            break;
+
+        case 2:
+            if (nbGold >= 30)
+            {
+                lvlHourGlass++;
+                nbGold -= 30;   document.getElementById('hourglass').innerHTML= 'Fully Upgraded';
+                document.getElementById('hourglass').disabled = 'true';
+                secondForHourGlass3()
+                setInterval(secondForHourGlass3, 1000);
+            }
+            break;
     }
 }
