@@ -36,12 +36,10 @@ body{
 }
 
 #hero{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 5;
-
-    width: 30vh;
+    width: 50vh;
+    position: fixed;
+    bottom: 5%;
+    left: 30%;
 }
 
 .monster{
@@ -95,8 +93,19 @@ body{
 
 .coin{
     width: 1vw;
-    margin-left: -0.3vw;
-    margin-top: -0.2vh;
+    margin-top: -0.5vh;
+    margin-left: 0.5vw;
+}
+
+.button{
+    border: none;
+    background: none;
+}
+
+.price{
+    width: 1vw;
+    margin-top: -0.5vh;
+    margin-left: 0.5vw;
 }
 
 .store{

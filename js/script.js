@@ -27,8 +27,8 @@ function mouseClicked()
     nbGold += lvlShield;
     nbGold += lvlLunette;
     nbGold += nbClick;
-    x += lvl;
+    x += nbClick;
     earningCoin();
-    heroAnimation1();
+    heroAnimation();
     popMonster();
 }
