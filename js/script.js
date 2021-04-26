@@ -37,6 +37,7 @@ function mouseClicked()
     nbGold += lvlBow;
     nbGold += lvlSpear;
     nbGold += lvlCrossBow;
+    nbGold += lvlHourGlass;
     nbGold += lvlLunette;
     nbGold += nbClick;
     x += nbClick;
