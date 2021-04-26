@@ -31,4 +31,5 @@ function mouseClicked()
     earningCoin();
     heroAnimation();
     popMonster();
+    playSound();
 }

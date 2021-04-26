@@ -65,18 +65,21 @@ body{
 }
 
 .monster4{
-    width: 50vh;
+    margin-bottom: 20%;
+    width: 80vh;
+}
+
+.rathian{
+    margin-bottom: 50%;
 }
 
 .monster5{
-    width: 60vh;
+    width: 80vh;
+    margin-bottom: 35%;
 }
 
 /*--- Vagues ---*/
 
-#round{
-    text-align: center;
-}
 
 /*--- Boutique ---*/
 
@@ -257,5 +260,34 @@ body{
 
     25%, 75% {
         opacity: 0;
+    }
+}
+
+.fadeOutDown {
+    -webkit-animation-name: fadeOutDown;
+    animation-name: fadeOutDown;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes fadeOutDown {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+}
+@keyframes fadeOutDown {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
     }
 }
