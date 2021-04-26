@@ -1,15 +1,23 @@
 let nbGold = 0;
 
 /**
- * Variables des items
+ * Variables des items Cac
  */
 let lvl = 1;
+let lvlAxe = 0;
 let lvlShield = 0;
-let lvlLunette = 0;
 
 /**
- * Variables des spells
+ * Variables des items Distance
  */
+let lvlBow = 0;
+let lvlSpear = 0;
+let lvlCrossBow = 0;
+
+/**
+ * Variables des items Bonus
+ */
+let lvlLunette = 0;
 let lvlHourGlass = 0;
 
 /**
@@ -24,7 +32,11 @@ var nbClick = 1;
 function mouseClicked()
 {
     nbGold += lvl;
+    nbGold += lvlAxe;
     nbGold += lvlShield;
+    nbGold += lvlBow;
+    nbGold += lvlSpear;
+    nbGold += lvlCrossBow;
     nbGold += lvlLunette;
     nbGold += nbClick;
     x += nbClick;
