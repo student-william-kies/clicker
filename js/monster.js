@@ -15,7 +15,7 @@ var allMonsters =
             '<img class="img-fluid monster2" id="monster" src="resources/gifs/normal/groscaca.gif">',
             '<img class="img-fluid monster2" id="monster" src="resources/gifs/normal/grosse.gif">',
             '<img class="img-fluid monster2" id="monster" src="resources/gifs/normal/wolf.gif">',
-            '<img class="img-fluid monster2" id="monster" src="resources/gifs/normal/zombie.gif">'
+            '<img class="img-fluid monster2" id="monster" style="transform: scaleX(-1); margin-top: 5%;" src="resources/gifs/normal/zombie.gif">'
         ],
         [
             '<img class="img-fluid monster3" id="monster" src="resources/gifs/rare/demon.gif">',
@@ -65,7 +65,7 @@ function popMonster()
         {
             pop++;
             document.getElementById("popZone").classList.add("fadeOutDown");
-            document.getElementById("popZone").innerHTML = allMonsters[1][Math.floor(Math.random()*3)];
+            document.getElementById("popZone").innerHTML = allMonsters[1][Math.floor(Math.random()*4)];
         }
         else
         {
