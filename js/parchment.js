@@ -19,24 +19,32 @@ function incrementSeconds()
 {
     nbGold += 1;
     document.getElementById("nbGold").innerHTML = nbGold + '<img src="resources/gifs/coin.gif" class="coin" alt="coin">';
+
+    saveGold()
 }
 
 function secondForHourGlass()
 {
     nbGold += 500;
     document.getElementById("nbGold").innerHTML = nbGold + '<img src="resources/gifs/coin.gif" class="coin" alt="coin">';
+
+    saveGold()
 }
 
 function secondForHourGlass2()
 {
     nbGold += 1000;
     document.getElementById("nbGold").innerHTML = nbGold + '<img src="resources/gifs/coin.gif" class="coin" alt="coin">';
+
+    saveGold()
 }
 
 function secondForHourGlass3()
 {
     nbGold += 10000;
     document.getElementById("nbGold").innerHTML = nbGold + '<img src="resources/gifs/coin.gif" class="coin" alt="coin">';
+
+    saveGold()
 }
 
 /***********************************************************************************************************************

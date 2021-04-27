@@ -1,4 +1,14 @@
-let nbGold = 0;
+let nbGold;
+let goldStorage = localStorage.getItem('gold');
+
+if (goldStorage !== null)
+{
+    nbGold = parseInt(goldStorage);
+}
+else
+{
+    nbGold = 0;
+}
 
 /**
  * Variables des items Cac
@@ -45,3 +55,30 @@ function mouseClicked()
     heroAnimation();
     popMonster();
 }
+
+/***********************************************************************************************************************
+ * LOCALSTORAGE
+ **********************************************************************************************************************/
+
+function saveGold()
+{
+    const gold = () =>
+    {
+        if (goldStorage == null)
+        {
+            setGold()
+        } else
+        {
+            setGold()
+        }
+    }
+
+    function setGold()
+    {
+        localStorage.setItem('gold', nbGold);
+    }
+
+    gold();
+}
+document.getElementById('nbGold').innerHTML = nbGold + '<img src="resources/gifs/coin.gif" class="coin" alt="coin">';
+
