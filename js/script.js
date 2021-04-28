@@ -1,16 +1,24 @@
-var nbGold = 0;
+let nbGold;
 
 /**
- * Variables des items
+ * Variables des items Cac
  */
-var lvl = 1;
-var lvlShield = 0;
-var lvlLunette = 0;
+let lvl = 1;
+let lvlAxe = 0;
+let lvlShield = 0;
 
 /**
- * Variables des spells
+ * Variables des items Distance
  */
-var lvlHourGlass = 0;
+let lvlBow = 0;
+let lvlSpear = 0;
+let lvlCrossBow = 0;
+
+/**
+ * Variables des items Bonus
+ */
+let lvlLunette = 0;
+let lvlHourGlass = 0;
 
 /**
  * Variables des monstres
@@ -24,12 +32,55 @@ var nbClick = 1;
 function mouseClicked()
 {
     nbGold += lvl;
+    nbGold += lvlAxe;
     nbGold += lvlShield;
+    nbGold += lvlBow;
+    nbGold += lvlSpear;
+    nbGold += lvlCrossBow;
+    nbGold += lvlHourGlass;
     nbGold += lvlLunette;
     nbGold += nbClick;
     x += nbClick;
     earningCoin();
     heroAnimation();
     popMonster();
-    playSound();
 }
+
+/***********************************************************************************************************************
+ * LOCALSTORAGE
+ **********************************************************************************************************************/
+let goldStorage = localStorage.getItem('gold');
+
+if (goldStorage !== null)
+{
+    nbGold = parseInt(goldStorage);
+}
+else
+{
+    nbGold = 0;
+}
+
+/**
+ * Enregistre l'or en local
+ */
+function saveGold()
+{
+    const gold = () =>
+    {
+        if (goldStorage == null)
+        {
+            setGold()
+        } else
+        {
+            setGold()
+        }
+    }
+
+    function setGold()
+    {
+        localStorage.setItem('gold', nbGold);
+    }
+
+    gold();
+}
+document.getElementById('nbGold').innerHTML = nbGold + '<img src="resources/gifs/coin.gif" class="coin" alt="coin">';
