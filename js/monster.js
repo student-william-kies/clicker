@@ -107,7 +107,7 @@ function popMonster()
         {
             pop++;
             document.getElementById("popZone").classList.add("fadeOutDown");
-            document.getElementById("popZone").innerHTML = allMonsters[4][Math.floor(Math.random()*2)];
+            document.getElementById("popZone").innerHTML = allMonsters[4][Math.floor(Math.random()*3)];
         }
         else
         {
