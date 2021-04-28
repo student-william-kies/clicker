@@ -7,7 +7,7 @@ var allMonsters =
             '<img class="img-fluid monster1" id="monster" src="resources/gifs/commun/cactus.gif">',
             '<img class="img-fluid monster1" id="monster" src="resources/gifs/commun/harpie.gif">',
             '<img class="img-fluid monster1" id="monster" src="resources/gifs/commun/slime.gif">',
-            '<img class="img-fluid monster1" id="monster" style="transform: scaleX(-1)" src="resources/gifs/commun/birdblack.gif">',
+            '<img class="img-fluid monster1" id="monster" src="resources/gifs/commun/birdblack.gif">',
             '<img class="img-fluid monster1" id="monster" style="transform: scaleX(-1)" src="resources/gifs/commun/birdgreen.gif">',
             '<img class="img-fluid monster1" id="monster" src="resources/gifs/commun/covid.gif">'
         ],
@@ -24,8 +24,8 @@ var allMonsters =
         ],
         [
             '<img class="img-fluid monster4" id="monster" src="resources/gifs/elite/leo.gif">',
-            '<img class="img-fluid monster4" id="monster" style="transform: scaleX(-1)" src="resources/gifs/elite/marteau.gif">',
-            '<img class="img-fluid monster4 rathian" id="monster" style="transform: scaleX(-1)" src="resources/gifs/elite/rathian.gif">'
+            '<img class="img-fluid monster4" id="monster" src="resources/gifs/elite/marteau.gif">',
+            '<img class="img-fluid monster4 rathian" id="monster" src="resources/gifs/elite/rathian.gif">'
         ],
         [
             '<img class="img-fluid monster5" id="monster" src="resources/gifs/boss/kouizine.png">',

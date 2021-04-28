@@ -44,7 +44,11 @@ function mouseClicked()
     earningCoin();
     heroAnimation();
     popMonster();
+    playSound();
 }
+
+let video = document.getElementById('playVideo');
+video.volume = 0.5;
 
 /***********************************************************************************************************************
  * LOCALSTORAGE

@@ -43,10 +43,10 @@ function manageSword()
     switch (lvl)
     {
         case 1:
-            if (nbGold >= 10000)
+            if (nbGold >= 4000)
             {
                 lvl = 200;
-                nbGold -= 10000;   document.getElementById('sword').innerHTML= 'Fully Upgraded';
+                nbGold -= 4000;   document.getElementById('sword').innerHTML= 'Fully Upgraded';
                 document.getElementById('sword').disabled = 'true';
             }
         break;
@@ -104,10 +104,10 @@ function manageBow()
     switch (lvlBow)
     {
         case 0:
-            if (nbGold >= 150000)
+            if (nbGold >= 200000)
             {
                 lvlBow = 3500;
-                nbGold -= 1500000;   document.getElementById('bow').innerHTML= 'Fully Upgraded';
+                nbGold -= 200000;   document.getElementById('bow').innerHTML= 'Fully Upgraded';
                 document.getElementById('bow').disabled = 'true';
             }
         break;
@@ -204,7 +204,7 @@ function manageLunette()
  * Enregistre le niveau de l'épée
  */
 let swordStorage = localStorage.getItem('sword');
-document.getElementById('sword').innerHTML = 'Upgrade 10k<img src="resources/gifs/coin.gif" class="price" alt="coin">';
+document.getElementById('sword').innerHTML = 'Upgrade 4k<img src="resources/gifs/coin.gif" class="price" alt="coin">';
 
 if (swordStorage !== null && swordStorage === '200')
 {
@@ -278,7 +278,7 @@ function saveAxe()
  * Enregistre le niveau du bouclier
  */
 let shieldStorage = localStorage.getItem('shield');
-document.getElementById('shield').innerHTML = 'Upgrade 100k<img src="resources/gifs/coin.gif" class="price" alt="coin">';
+document.getElementById('shield').innerHTML = 'Upgrade 300k<img src="resources/gifs/coin.gif" class="price" alt="coin">';
 
 if (shieldStorage !== null && shieldStorage === '5000')
 {

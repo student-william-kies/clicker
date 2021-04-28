@@ -10,6 +10,16 @@ html{
     height: 100%;
 }
 
+#playVideo{
+    border-radius: 80%;
+    width: 30%;
+    height: 10%;
+    position: fixed;
+    right: 16%;
+    top: 7%;
+    filter: opacity(50%);
+}
+
 body{
     background-image: url("../resources/images/landscape-bg.png");
     background-size: cover;
@@ -70,7 +80,7 @@ body{
 }
 
 .rathian{
-    margin-bottom: 50%;
+    margin-bottom: 80%;
 }
 
 .monster5{
