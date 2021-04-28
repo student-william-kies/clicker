@@ -1,7 +1,7 @@
 /**
  * Execute une animation du héro lorsque l'utilisateur clic sur l'écran
  */
-function heroAnimation1()
+function heroAnimation()
 {
     if ( document.getElementById("hero").classList.contains('wobble') || document.getElementById("popZone").classList.contains('flash blood'))
     {
