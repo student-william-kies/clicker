@@ -1,16 +1,16 @@
-let nbGold = 0;
+var nbGold = 0;
 
 /**
  * Variables des items
  */
-let lvl = 1;
-let lvlShield = 0;
-let lvlLunette = 0;
+var lvl = 1;
+var lvlShield = 0;
+var lvlLunette = 0;
 
 /**
  * Variables des spells
  */
-let lvlHourGlass = 0;
+var lvlHourGlass = 0;
 
 /**
  * Variables des monstres
@@ -31,4 +31,5 @@ function mouseClicked()
     earningCoin();
     heroAnimation();
     popMonster();
+    playSound();
 }
